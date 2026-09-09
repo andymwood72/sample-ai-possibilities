@@ -80,7 +80,7 @@ DEF_CONFIG = FallbackConfig(
     possession_action="PASS",
     pass_exclude_ids=[0],  # don't pass back to GK
     default_x_factor=0.6, default_x_ref="my_goal", default_y=0,
-    mark_threshold=30.0, mark_tightness="TIGHT",
+    mark_threshold=25.0, mark_tightness="TIGHT",
     default_stance=2,
     last_resort_command_type="SET_STANCE", last_resort_params={"stance": 2},
 )
@@ -96,7 +96,7 @@ MID_CONFIG = FallbackConfig(
 )
 
 FWD1_CONFIG = FallbackConfig(
-    possession_action="SHOOT_OR_ADVANCE",
+    possession_action="SHOOT_OR_PASS",
     advance_x_factor=0.6, advance_y=-8, advance_sprint=True,
     support_x_factor=0.5, support_y=-10, support_sprint=True,
     default_x_factor=0.4, default_x_ref="opp_goal", default_y=-8,
@@ -108,7 +108,7 @@ FWD1_CONFIG = FallbackConfig(
 )
 
 FWD2_CONFIG = FallbackConfig(
-    possession_action="SHOOT_OR_ADVANCE",
+    possession_action="SHOOT_OR_PASS",
     advance_x_factor=0.6, advance_y=8, advance_sprint=True,
     support_x_factor=0.5, support_y=10, support_sprint=True,
     default_x_factor=0.4, default_x_ref="opp_goal", default_y=8,

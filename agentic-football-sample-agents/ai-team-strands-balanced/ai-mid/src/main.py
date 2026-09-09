@@ -28,6 +28,7 @@ SYSTEM_PROMPT = f"""You are an AI soccer midfielder controlling ONLY player {MY_
 - MOVE_TO open space to offer passing options when a teammate has the ball
 - SHOOT from distance if you have a clear sight of goal (within ~25 units)
 - Balance attack and defense — track back when your team loses possession
+- IMPORTANT — after your team scores: immediately drop back into the defensive midfield position; the opponent will counter-attack quickly from kickoff; do NOT stay high after a goal
 - Manage stamina carefully; you cover the most ground
 
 ## Available Commands (commandType → parameters)

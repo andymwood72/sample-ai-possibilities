@@ -23,6 +23,7 @@ SYSTEM_PROMPT = f"""You are an AI soccer forward controlling ONLY player {MY_PLA
 ## Your Role — Forward 2 (Right/Secondary Striker)
 - Your main job is to SCORE GOALS — be aggressive and attack-minded
 - SHOOT whenever you have the ball within shooting range (~25 units from goal)
+- If you have the ball but are NOT within shooting range, PASS to Forward 1 or the Midfielder — do not dribble alone; build the attack through passing
 - Make runs toward the opponent's goal to get into scoring positions
 - MOVE_TO open space ahead of the ball to receive through passes
 - When a teammate has the ball, position yourself for a pass in the attacking third

@@ -1,0 +1,66 @@
+{
+  "targets": {
+    "default": {
+      "resources": {
+        "runtimes": {
+          "ai_mid_combined_agent": {
+            "runtimeId": "TeamStrandsCombined_ai_mid_combined_agent-FTce4REnv1",
+            "runtimeArn": "arn:aws:bedrock-agentcore:us-east-1:448049816100:runtime/TeamStrandsCombined_ai_mid_combined_agent-FTce4REnv1",
+            "roleArn": "arn:aws:iam::448049816100:role/AgentCore-TeamStrandsComb-ApplicationAgentAiMidComb-bsZdE8EuZXZ2"
+          },
+          "ai_fwd2_combined_agent": {
+            "runtimeId": "TeamStrandsCombined_ai_fwd2_combined_agent-xl4GM1F4EL",
+            "runtimeArn": "arn:aws:bedrock-agentcore:us-east-1:448049816100:runtime/TeamStrandsCombined_ai_fwd2_combined_agent-xl4GM1F4EL",
+            "roleArn": "arn:aws:iam::448049816100:role/AgentCore-TeamStrandsComb-ApplicationAgentAiFwd2Com-O0wE9eXZnpDU"
+          },
+          "ai_def_combined_agent": {
+            "runtimeId": "TeamStrandsCombined_ai_def_combined_agent-rXq8XC5Ve6",
+            "runtimeArn": "arn:aws:bedrock-agentcore:us-east-1:448049816100:runtime/TeamStrandsCombined_ai_def_combined_agent-rXq8XC5Ve6",
+            "roleArn": "arn:aws:iam::448049816100:role/AgentCore-TeamStrandsComb-ApplicationAgentAiDefComb-m7lzzp4z5My2"
+          },
+          "ai_fwd1_combined_agent": {
+            "runtimeId": "TeamStrandsCombined_ai_fwd1_combined_agent-dKsXnhEe7q",
+            "runtimeArn": "arn:aws:bedrock-agentcore:us-east-1:448049816100:runtime/TeamStrandsCombined_ai_fwd1_combined_agent-dKsXnhEe7q",
+            "roleArn": "arn:aws:iam::448049816100:role/AgentCore-TeamStrandsComb-ApplicationAgentAiFwd1Com-pxMrbVejSHOY"
+          },
+          "ai_gk_combined_agent": {
+            "runtimeId": "TeamStrandsCombined_ai_gk_combined_agent-djVNTk4p3G",
+            "runtimeArn": "arn:aws:bedrock-agentcore:us-east-1:448049816100:runtime/TeamStrandsCombined_ai_gk_combined_agent-djVNTk4p3G",
+            "roleArn": "arn:aws:iam::448049816100:role/AgentCore-TeamStrandsComb-ApplicationAgentAiGkCombi-IYf05OsdtuhR"
+          }
+        },
+        "memories": {
+          "team_memory": {
+            "memoryId": "TeamStrandsCombined_team_memory-3qVC9D356g",
+            "memoryArn": "arn:aws:bedrock-agentcore:us-east-1:448049816100:memory/TeamStrandsCombined_team_memory-3qVC9D356g"
+          }
+        },
+        "mcp": {
+          "gateways": {
+            "tactical-tools": {
+              "gatewayId": "teamstrandscombined-tactical-tools-nafhk3twjr",
+              "gatewayArn": "arn:aws:bedrock-agentcore:us-east-1:448049816100:gateway/teamstrandscombined-tactical-tools-nafhk3twjr",
+              "gatewayUrl": "https://teamstrandscombined-tactical-tools-nafhk3twjr.gateway.bedrock-agentcore.us-east-1.amazonaws.com/mcp",
+              "targets": {
+                "evaluate-shot": {
+                  "targetId": "KTAK7U1WRJ"
+                },
+                "get-defensive-assignment": {
+                  "targetId": "2BZICZMLHV"
+                },
+                "find-open-space": {
+                  "targetId": "NRXLOA46PR"
+                },
+                "calculate-pass-options": {
+                  "targetId": "CDFIAZFZDC"
+                }
+              }
+            }
+          }
+        },
+        "stackName": "AgentCore-TeamStrandsCombined-default",
+        "deployHash": "7fddd3fc7952db80"
+      }
+    }
+  }
+}

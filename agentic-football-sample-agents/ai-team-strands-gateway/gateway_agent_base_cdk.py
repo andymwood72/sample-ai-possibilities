@@ -15,10 +15,11 @@ variables) and is shared by both flows.
 """
 
 import os
+import httpx2
 from strands import Agent
 from strands.models import BedrockModel
 from strands.tools.mcp.mcp_client import MCPClient
-from mcp.client.streamable_http import streamablehttp_client
+from mcp.client.streamable_http import streamable_http_client
 
 
 def _create_gateway_transport():
@@ -40,7 +41,8 @@ def _create_gateway_transport():
     if access_token:
         headers["Authorization"] = f"Bearer {access_token}"
 
-    return streamablehttp_client(gateway_url, headers=headers)
+    http_client = httpx2.AsyncClient(headers=headers) if headers else None
+    return streamable_http_client(gateway_url, http_client=http_client)
 
 
 def create_gateway_agent(

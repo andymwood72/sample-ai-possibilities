@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+_build*/
+
+# Injected at deploy time — not committed
+ai-gk/lib/
+ai-gk/combined_agent_base.py
+ai-gk/combined_invoke_handler.py
+ai-def/lib/
+ai-def/combined_agent_base.py
+ai-def/combined_invoke_handler.py
+ai-mid/lib/
+ai-mid/combined_agent_base.py
+ai-mid/combined_invoke_handler.py
+ai-fwd1/lib/
+ai-fwd1/combined_agent_base.py
+ai-fwd1/combined_invoke_handler.py
+ai-fwd2/lib/
+ai-fwd2/combined_agent_base.py
+ai-fwd2/combined_invoke_handler.py
